@@ -4198,6 +4198,10 @@ textarea.form-control-lg {
   margin-bottom: 0;
 }
 
+.card-text{
+  margin-bottom:0.5rem;
+}
+
 .card-text:last-child {
   margin-bottom: 0;
 }
