@@ -268,23 +268,15 @@
 
 	};
 
-	var owlCrouselFeatureSlide = function() {
-		$('.owl-carousel').owlCarousel({
-			animateOut: 'fadeOut',
-		   animateIn: 'fadeIn',
-		   autoplay: true,
-		   loop:true,
-		   margin:0,
-		   nav:true,
-		   dots: false,
-		   autoHeight: true,
-		   items: 1,
-		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
-		})
-	};
+
+	var shadowCard = function(){
+		$( ".card" ).hover(
+		function() {
+		  $(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+		}, function() {
+		  $(this).removeClass('shadow-lg');
+		}
+		)};
 
 	// Document on load.
 	$(function(){
@@ -298,12 +290,11 @@
 		// navActive();
 		navigationSection();
 		// windowScroll();
-
+		shadowCard();
 
 		mobileMenuOutsideClick();
 		sliderMain();
 		stickyFunction();
-		owlCrouselFeatureSlide();
 	});
 
 
