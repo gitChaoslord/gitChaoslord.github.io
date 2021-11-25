@@ -1487,14 +1487,30 @@ body.offcanvas {
   opacity: 0; }
 
 .technology-icon {
-  height: 80px;
-  width: 80px;
-  /* padding:10px !important; */
+  height: 4.5rem;
+  width: 4.5rem;
 }
 
-.technology {
-  height:125px;
-  width:125px;;
-  /* padding:10px; */
-  /* margin:10px; */
+.technology-header {
+  text-align: center;
+  margin-top:0.75rem;
+  min-width: 80px;
+  width: 6rem;
 }
+.technology {
+  flex: 0 0 10%;
+  height:124px;
+  width:124px;
+}
+
+/* .accordion-button {
+  outline: none !important;
+  box-shadow:none !important;
+}
+
+.language {
+  text-decoration: none !important;
+}
+.language:hover{
+  background-color: var(--bs-primary);
+} */

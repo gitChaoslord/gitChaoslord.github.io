@@ -229,9 +229,6 @@
 				$("#sticky_item").stick_in_parent();
 			}
 
-
-
-
 		});
 
 		$('.sticky-parent').css('height', h);
