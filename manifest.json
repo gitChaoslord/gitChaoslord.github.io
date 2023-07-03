@@ -1,6 +1,8 @@
 {
-  "short_name": "John Kotronakis",
-  "name": "John Kotronakis CV page",
+  "id": "jwkk.dev.portfolio",
+  "short_name": "John's Porfolio",
+  "name": "John's Porfolio",
+  "description": "John's developer portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +10,11 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "display_override": [
+    "minimal-ui"
+  ],
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#f2f3f7",
   "background_color": "#ffffff"
 }
