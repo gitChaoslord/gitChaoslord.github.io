@@ -12,6 +12,7 @@
   <meta name="theme-color" content="#f2f3f7">
   <meta name="description" content="Software Engineer">
   <meta name="google-site-verification" content="v0RuEGupnWeheOzxZETrFg6Ymjjpm6neh3VAL13MsmQ">
+  <meta name="color-scheme" content="light dark">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/favicon.ico">
 
@@ -35,12 +36,27 @@
 
 
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+    }
+
+    :root {
+      --color-bg: #fff;
+      --color-txt: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #181818;
+        --color-txt: #fff;
+      }
+    }
+
+    html {
+      background-color: var(--color-bg);
+      color: var(--color-txt);
       font-family: monospace;
-      background: #181818;
-      color: #fff;
     }
 
     main {
@@ -48,6 +64,12 @@
       place-items: center;
       min-height: 100vh;
       text-align: center;
+    }
+
+    h1,
+    h2,
+    p {
+      margin-bottom: 0.83em;
     }
   </style>
 
