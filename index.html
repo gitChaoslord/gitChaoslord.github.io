@@ -61,17 +61,30 @@
       font-family: monospace;
     }
 
+    html,
+    body,
+    main {
+      height: 100%;
+    }
+
     main {
       display: grid;
       place-items: center;
-      min-height: 100vh;
       text-align: center;
+      min-height: 100vh;
+      /* fall-back */
+      min-height: -moz-available;
+      min-height: -webkit-fill-available;
+      min-height: fill-available;
     }
 
     h1,
-    h2,
     p {
-      margin-bottom: 0.83em;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin-bottom: 2.5rem;
     }
   </style>
 
